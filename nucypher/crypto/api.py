@@ -61,7 +61,7 @@ def secure_random(num_bytes: int) -> bytes:
 
 def secure_random_range(min: int, max: int) -> int:
     """
-    Returns a number from a secure random source betwee the range of
+    Returns a number from a secure random source between the range of
     `min` and `max` - 1.
 
     :param min: Minimum number in the range
@@ -74,7 +74,7 @@ def secure_random_range(min: int, max: int) -> int:
 
 def keccak_digest(*messages: bytes) -> bytes:
     """
-    Accepts an iterable containing bytes and digests it returning a
+    Accepts an iterable containing bytes and digests it, returning a
     Keccak digest of 32 bytes (keccak_256).
 
     Although we use SHA256 in many cases, we keep keccak handy in order
